@@ -19,7 +19,8 @@
         <activity android:name=".customheader" />
         <activity
             android:name=".DetailProduct"
-            android:label="@string/title_activity_detail_product"
+            android:label="Rincian Produk"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".product_detail"></activity>
     </application>
