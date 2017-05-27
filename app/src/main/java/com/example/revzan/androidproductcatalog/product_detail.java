@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import io.realm.Realm;
@@ -29,9 +30,20 @@ public class product_detail extends AppCompatActivity {
         TextView title = (TextView) findViewById(R.id.detailTitle);
         TextView price = (TextView) findViewById(R.id.detailPrice);
         TextView desc = (TextView) findViewById(R.id.detailDesc);
+        ImageView image = (ImageView) findViewById(R.id.detailImage);
         title.setText(product.get_name());
         price.setText(String.valueOf("IDR ").concat(product.get_price()));
         desc.setText(product.get_description());
+        image.setImageResource(getImageRes(product.get_thumbnail()));
+
+    }
+    private int getImageRes(String thumb) {
+        if (thumb.equals("black")) {
+            return R.drawable.fog_design_art;
+        } else if (thumb.equals("white")) {
+            return R.drawable.rectangle_7;
+        }
+        return 0;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
