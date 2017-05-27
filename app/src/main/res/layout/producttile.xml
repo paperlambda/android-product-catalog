@@ -41,7 +41,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/productImage"
                     android:layout_width="93dp"
                     android:layout_height="133dp"
                     android:layout_gravity="top|center_horizontal"

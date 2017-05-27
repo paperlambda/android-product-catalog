@@ -13,6 +13,7 @@ public class Product extends RealmObject{
     private String _seller;
     private String _sellerlocation;
     private String _description;
+    private String _thumbnail;
 //    private byte[] _image;
 
     public long get_id() {
@@ -61,5 +62,13 @@ public class Product extends RealmObject{
 
     public void set_description(String _description) {
         this._description = _description;
+    }
+
+    public String get_thumbnail() {
+        return _thumbnail;
+    }
+
+    public void set_thumbnail(String _thumbnail) {
+        this._thumbnail = _thumbnail;
     }
 }

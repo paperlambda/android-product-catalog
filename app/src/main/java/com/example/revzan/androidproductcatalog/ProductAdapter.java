@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -48,6 +49,17 @@ public class ProductAdapter extends BaseAdapter {
         return product.get_id();
     }
 
+
+    private int getImageResForPosition(int position) {
+        Product product = products.get(position);
+        if (product.get_thumbnail().equals("black")) {
+            return R.drawable.fog_design_art;
+        } else if (product.get_thumbnail().equals("white")) {
+            return R.drawable.rectangle_7;
+        }
+        return 0;
+    }
+
     @Override
     public View getView(int position, View currentView, ViewGroup parent) {
         if (currentView == null) {
@@ -60,6 +72,8 @@ public class ProductAdapter extends BaseAdapter {
             ((TextView) currentView.findViewById(R.id.productName)).setText(product.get_name());
             ((TextView) currentView.findViewById(R.id.productPrice)).setText("IDR "+product.get_price());
             ((TextView) currentView.findViewById(R.id.productSeller)).setText(product.get_seller());
+            ((ImageView) currentView.findViewById(R.id.productImage)).setImageResource(getImageResForPosition(position));
+
         }
 
         return currentView;
