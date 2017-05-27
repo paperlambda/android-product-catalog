@@ -5,19 +5,23 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.TextView;
 
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import in.srain.cube.views.GridViewWithHeaderAndFooter;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
 
 public class MainActivity extends AppCompatActivity {
-    private GridView mGridView;
+    private GridViewWithHeaderAndFooter mGridView;
     private ProductAdapter mAdapter;
     private Realm realm;
     @Override
@@ -49,13 +53,20 @@ public class MainActivity extends AppCompatActivity {
             //This is the GridView adapter
             mAdapter = new ProductAdapter(this);
             mAdapter.setData(products);
-
             //This is the GridView which will display the list of cities
-            mGridView = (GridView) findViewById(R.id.productList);
+            mGridView = (GridViewWithHeaderAndFooter) findViewById(R.id.productList);
+            setGridViewHeaderAndFooter();
             mGridView.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
             mGridView.invalidate();
+
         }
+    }
+    private void setGridViewHeaderAndFooter() {
+        LayoutInflater layoutInflater = LayoutInflater.from(this);
+        View headerView = layoutInflater.inflate(R.layout.homeheader, null, false);
+
+        mGridView.addHeaderView(headerView);
     }
     @Override
     protected void onDestroy() {
