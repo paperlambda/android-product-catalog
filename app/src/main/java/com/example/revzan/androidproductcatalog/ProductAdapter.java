@@ -57,6 +57,7 @@ public class ProductAdapter extends BaseAdapter {
         if (product != null) {
             ((TextView) currentView.findViewById(R.id.productName)).setText(product.get_name());
             ((TextView) currentView.findViewById(R.id.productPrice)).setText(product.get_price());
+            ((TextView) currentView.findViewById(R.id.productSeller)).setText(product.get_seller());
         }
 
         return currentView;

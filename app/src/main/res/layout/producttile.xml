@@ -77,11 +77,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/productSeller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Premium Gadget"
                 android:textSize="8sp" />
         </LinearLayout>
 

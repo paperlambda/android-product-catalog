@@ -10,6 +10,9 @@ public class Product extends RealmObject{
     private int _id;
     private String _name;
     private String _price;
+    private String _seller;
+    private String _sellerlocation;
+    private String _description;
 //    private byte[] _image;
 
     public int get_id() {
@@ -36,4 +39,27 @@ public class Product extends RealmObject{
         this._price = _price;
     }
 
+    public String get_seller() {
+        return _seller;
+    }
+
+    public void set_seller(String _seller) {
+        this._seller = _seller;
+    }
+
+    public String get_sellerlocation() {
+        return _sellerlocation;
+    }
+
+    public void set_sellerlocation(String _sellerlocation) {
+        this._sellerlocation = _sellerlocation;
+    }
+
+    public String get_description() {
+        return _description;
+    }
+
+    public void set_description(String _description) {
+        this._description = _description;
+    }
 }
