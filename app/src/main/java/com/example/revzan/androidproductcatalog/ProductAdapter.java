@@ -38,12 +38,14 @@ public class ProductAdapter extends BaseAdapter {
         if (products == null || products.get(position) == null) {
             return null;
         }
-        return products.get(position);
+        Product product = products.get(position);
+        return product;
     }
 
     @Override
     public long getItemId(int i) {
-        return i;
+        Product product = products.get(i);
+        return product.get_id();
     }
 
     @Override

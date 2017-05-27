@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             Intent intent = new Intent(getApplicationContext(), product_detail.class);
-            intent.putExtra("POSITION", i);
+            intent.putExtra("POSITION", i + 1);
             startActivity(intent);
         }
     }

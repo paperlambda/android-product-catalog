@@ -7,7 +7,7 @@ import io.realm.RealmObject;
  */
 
 public class Product extends RealmObject{
-    private int _id;
+    private long _id;
     private String _name;
     private String _price;
     private String _seller;
@@ -15,11 +15,11 @@ public class Product extends RealmObject{
     private String _description;
 //    private byte[] _image;
 
-    public int get_id() {
+    public long get_id() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void set_id(long _id) {
         this._id = _id;
     }
 
