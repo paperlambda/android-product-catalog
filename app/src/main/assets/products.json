@@ -1,0 +1,42 @@
+[
+  {
+    "_id":1,
+    "_name": "IPHONE 6 16GB",
+    "_price": "7.500.000"
+  },
+  {
+    "_id":2,
+    "_name": "IPHONE 5 32GB",
+    "_price": "7.000.000"
+  },
+  {
+    "_id":3,
+    "_name": "IPHONE 6s 16GB",
+    "_price": "8.000.000"
+  },
+  {
+    "_id":4,
+    "_name": "IPHONE 4 16GB",
+    "_price": "3.000.000"
+  },
+  {
+    "_id":5,
+    "_name": "IPHONE 4 8GB",
+    "_price": "2.500.000"
+  },
+  {
+    "_id":6,
+    "_name": "IPHONE 6s 32GB",
+    "_price": "8.000.000"
+  },
+  {
+    "_id":7,
+    "_name": "IPHONE 5s 16GB",
+    "_price": "6.000.000"
+  },
+  {
+    "_id":8,
+    "_name": "IPHONE 7 16GB",
+    "_price": "10.000.000"
+  }
+]
