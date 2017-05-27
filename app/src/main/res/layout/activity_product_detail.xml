@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="#0f596b">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="match_parent"
+            android:text="Rincian Produk"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:gravity="left|center"
+            android:layout_weight="0.74" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="305dp"
+            android:layout_height="430dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.74"
+                    android:gravity="left|center"
+                    android:text="iPhone 6S 16GB"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="300dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.74"
+                    android:gravity="left|center"
+                    android:text="Rp 8.700.000"
+                    android:textColor="#96281B"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/rectangle_7" />
+
+                <LinearLayout
+                    android:layout_width="305dp"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.74"
+                    android:gravity="left|center"
+                    android:layout_marginTop="10dp"
+                    android:text="Detail Produk"
+                    android:textColor="#0f596b"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.74"
+                    android:gravity="left|center"
+                    android:text="Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an"
+                    android:textColor="#aaa"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add To Cart"
+            android:textColor="#fff"
+            android:background="#0f596b"/>
+    </LinearLayout>
+
+
+</LinearLayout>
