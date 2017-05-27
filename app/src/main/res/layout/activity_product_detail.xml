@@ -113,20 +113,22 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom">
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#0f596b"
             android:text="Add To Cart"
-            android:textColor="#fff"
-            android:background="#0f596b"/>
-    </LinearLayout>
+            android:textColor="#fff" />
+    </RelativeLayout>
 
 
 </LinearLayout>

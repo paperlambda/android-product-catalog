@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     class ItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Intent intent = new Intent(getApplicationContext(), DetailProduct.class);
+            Intent intent = new Intent(getApplicationContext(), product_detail.class);
             intent.putExtra("POSITION", i);
             startActivity(intent);
         }
